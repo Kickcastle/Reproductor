@@ -4,31 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>Reproductor</title>
     <link rel="stylesheet" href="CSS/main.css">
   </head>
   <body>
     <div class="boxcontainerG">
       <div class="boxcontainer">
         <div class="header">
-          <h1>Disco en reproducción</h1>
+          <div class="titulo">
+            <marquee>Disco en reproducción</marquee>
+          </div>
+          <div class="portaimg">
+          <img id="pic" src="./contenido/reproductor.jpg" alt="">
+          </div>
+          <div class="portaplay">
+            <audio id="sound1" src="" onended="siguiente()" controls="true"></audio>
+          </div>
         </div>
         <div class="button">
-          <button onclick="pressB()"><img src="contenido/anterior.png" height="10px" width="10px"></button>
-          <button onclick="pressP()"><img src="contenido/tocar.png" height="10px" width="10px"></button>
-          <button onclick="pressS()"><img src="contenido/detener.png" height="10px" width="10px"></button>
-          <button onclick="pressN()"><img src="contenido/proximo.png" height="10px" width="10px"></button>
+          <button onclick="anterior()"><img src="contenido/anterior.png" height="10px" width="10px"></button>
+          <button onclick="inicio()"><img src="contenido/tocar.png" height="10px" width="10px"></button>
+          <button onclick="pausar()"><img src="contenido/pausa.png" height="10px" width="10px"></button>
+          <button onclick="siguiente()"><img src="contenido/proximo.png" height="10px" width="10px"></button>
         </div>
-        <div class="sectionTitle">
-          <p>
-            Playlist
-          </p>
+
+
+
+        <div id="contenedorMusic">
+          <div id="playList">
+            <div id="sounds">
+              <div>
+                <a href="#/Pista 1" class="music" onclick="Reproductor('./contenido/the-weeknd-save-your-tears-official-music-video.mp3', './contenido/cirugia wknd.jpg')">The Weeknd</a>
+              </div>
+              <div>
+                <a href="#/Pista 2" class="music" onclick="Reproductor('./contenido/drake-laugh-now-cry-later-official-music-video-ft-lil-durk.mp3', './contenido/Drake.jpg')">Drake</a>
+              </div>
+              <div>
+                <a href="#/Pista 3" class="music" onclick="Reproductor('./contenido/eminem-godzilla-ft-juice-wrld-directed-by-cole-bennett.mp3', './contenido/eminem.jpg')">Eminem</a>
+              </div>
+              <div>
+                <a href="#/Pista 4" class="music" onclick="Reproductor('./contenido/kyoukai-no-kanata-linkin-park-numb-amv-720p-hd.mp3', './contenido/linking.jpg')">Linking park</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="section">
-          <p>
-            Coloca tus mejores discos!
-          </p>
-        </div>
+
+
+
         <div class="icons">
           <a href="#"><img src="contenido/nota-musical.png" height="50px" width="50px"></a>
         </div>

@@ -34,17 +34,29 @@ body {
     /* font-family: tahoma; */
     color: #000;
     padding: 10px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     text-align: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+  }
+  .titulo {
+    font-size: 20px;
+    margin: 5px;
+  }
+  .portaimg{
+    width: 100%;
+    height: auto;
+  }
+  #pic {
+    width: 200px;
+    height: 150px;
   }
 
   /* Botones */
 
   .button {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding: 20px;
   }
   .button button {
@@ -71,26 +83,22 @@ body {
 
   /* secciones */
 
-  .sectionTitle {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-  }
-  .section {
-    display: flex;
-    justify-content: center;
-    /* text-align: justify; */
+  #contenedorMusic {
     width: 100%;
     height: 100px;
-    background:rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.521);
   }
-  .section p {
-    width: 70%;
-    color: #fff;
+  #sounds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
   }
-
-  
+  .music {
+    text-decoration: none;
+    color: white;
+  }
   /* Icon */
 
 
@@ -101,4 +109,5 @@ body {
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
+    padding: 10px 10px;
   }
